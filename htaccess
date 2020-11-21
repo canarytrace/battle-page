@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteBase /
+
+RewriteCond %{ENV:HTTPS} !^.*on
+RewriteRule ^(.*)$ https://canarytrace.com/$1 [R,L]
