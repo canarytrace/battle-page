@@ -1,16 +1,23 @@
 # Demo Web
 
-### How to run
-`docker run -it --rm -d -p 80:80 -p 443:443 --name demo-web rdpanek/demo-web`
-
-### How to open
+## How to open
 
 - open browser with `localhost` => http
 - open browser with `https://localhost` => https, http/2
 
-### Features
+### Version / Tag 1
+`docker run -it --rm -d -p 80:80 -p 443:443 --name demo-web rdpanek/demo-web:1`
+
+**Features**
 
 - unused resources
 - http/2, https
 - lot of elements
 - big image
+---
+### Version / Tag 2
+`docker run -it --rm -d -p 80:80 -p 443:443 --name demo-web rdpanek/demo-web:2`
+
+**Features**
+
+- gzip, http2_push for some resources
