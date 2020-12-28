@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Canarytrace</title>
+    <meta name="description" content="BattlePage">
+    <meta property="og:title" content="BattlePage">
+    <meta property="og:description" content="Test site">
+    <meta property="og:url" content="http://canarytrace.com/">
+    <meta property="og:site_name" content="BattlePage">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@canarytrace">
+
+    <link rel="stylesheet" href="styles/page.css">
+
+    <!-- demo resources -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Tangerine">
+</head>
+<body>
+<div class="holder">
+    <div class="main-h">
+        <img src="assets/demo-web/img/logo-demo-web.png" alt="Demo Web Logo" class="sp_logo">
+        <div class="btn-container">
+            <a href="https://bit.ly/canary-doc" target="_blank" class="btn"><img src="assets/images/file.svg" alt="Canarytrace documentation">Documentation</a>
+            <a href="./PeformanceTestAnalyza.pdf" target="_blank" class="btn btn-yellow"><img src="assets/images/time.svg" alt="PTA">PTA</a>
+            <a href="./OnePagerSmokeProV2EN.pdf" class="btn" target="_blank"><img src="assets/images/down.svg" alt="Features Overview">Features Overview</a>
+        </div>
+    </div>
+    <div id="demo-box">
+        <script>
+            var foo = new Array(10000);
+            for(var i = 0; i < foo.length; i++){
+                document.write(`<div id='test${(i + 1)}'></div>`); 
+            }
+        </script>
+    </div>
+    <footer>
+        <div class="container">
+            <p>Demo application for Performance and WebPerformance testing</p>
+            <div class="separ"></div>
+            <a href="https://twitter.com/canarytrace" target="_blank" class="link link-tw">twitter</a>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
