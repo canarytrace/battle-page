@@ -21,3 +21,10 @@
 **Features**
 
 - gzip, http2_push for some resources
+---
+### Version / Tag 3
+`docker run -it --rm -d -p 80:80 -p 443:443 --name demo-web rdpanek/demo-web:3`
+
+**Features**
+
+- lot of small icons added, big image = wallpaper added
