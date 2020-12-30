@@ -7,9 +7,7 @@ ENV NGINX_CONFIG nginx-alpine-ssl
 COPY . ${APP_DIR}
 # RUN
 RUN apk add nginx; \
-    mkdir /run/nginx/; \
-    rm -rf ${APP_DIR}/index.html; \
-    mv ${APP_DIR}/index-demo.html ${APP_DIR}/index.html;
+    mkdir /run/nginx/;
 # CONFIGUTATIONS
 # nginx configuration
 ADD ${NGINX_CONFIG}/config/default.conf /etc/nginx/conf.d/default.conf
