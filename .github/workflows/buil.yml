@@ -7,7 +7,7 @@ on:
 
 jobs:
   
-  BuildShipper:
+  BuildBattlePage:
     runs-on: ubuntu-20.04
     outputs:
       git-tag: ${{ steps.previoustag.outputs.tag }}
