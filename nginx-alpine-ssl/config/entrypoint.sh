@@ -1,6 +1,6 @@
 # Main shell script that is run at the time that the Docker image is run
 # Go to default.conf directory
-cd /etc/nginx/conf.d;
+cd /etc/nginx/http.d;
 # ENV VARS
 # A list of environment variables that are passed to the container and their defaults
 # CRT - double check that the file exists

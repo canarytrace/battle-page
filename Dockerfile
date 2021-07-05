@@ -6,11 +6,10 @@ ENV NGINX_CONFIG nginx-alpine-ssl
 
 COPY . ${APP_DIR}
 # RUN
-RUN apk add nginx; \
-    mkdir /run/nginx/;
+RUN apk add nginx
 # CONFIGUTATIONS
 # nginx configuration
-ADD ${NGINX_CONFIG}/config/default.conf /etc/nginx/conf.d/default.conf
+ADD ${NGINX_CONFIG}/config/default.conf /etc/nginx/http.d/default.conf
 # keys and certs
 ADD ${NGINX_CONFIG}/config/*.key /etc/ssl/private/
 ADD ${NGINX_CONFIG}/config/*.crt /etc/ssl/certs/
