@@ -1,0 +1,46 @@
+name: Build Battle Page
+
+on:
+  push:
+    branches: 
+    - master
+
+jobs:
+  
+  BuildBattlePage:
+    runs-on: ubuntu-20.04
+    outputs:
+      git-tag: ${{ steps.previoustag.outputs.tag }}
+
+    steps:
+      -
+        name: Checkout Repository
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      -
+        name: 'Get Previous Tag'
+        id: previoustag
+        uses: "WyriHaximus/github-action-get-previous-tag@master"
+      - 
+        name: 'Git Tag'
+        run: echo ${{steps.previoustag.outputs.tag}}
+      -
+        name: Docker build with latest tag
+        run: docker build -t quay.io/canarytrace/battle-page:latest .
+      -
+        name: Re-tag docker image
+        run: docker tag quay.io/canarytrace/battle-page:latest quay.io/canarytrace/battle-page:"${{steps.previoustag.outputs.tag}}"
+      -
+        name: List docker images
+        run: docker images
+      
+      # Push to Quay repository
+      - 
+        name: Login to Quay.io
+        run: docker login quay.io -u=${{ secrets.QUAY_USERNAME }} -p='${{ secrets.QUAY_PASS }}'
+      -
+        name: Push new image do Quay.io
+        run: |
+          docker push quay.io/canarytrace/battle-page:latest
+          docker push quay.io/canarytrace/battle-page:"${{steps.previoustag.outputs.tag}}"
