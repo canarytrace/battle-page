@@ -21,4 +21,4 @@ is training application for performance and web performance testing
 
 # Development
 
-`npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch`
+`npm run start`
