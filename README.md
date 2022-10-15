@@ -18,3 +18,7 @@ is training application for performance and web performance testing
 - gzip, http2_push for some resources
 - lot of small icons added, big image = wallpaper added
 - 2s wait loading
+
+# Development
+
+`npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch`
