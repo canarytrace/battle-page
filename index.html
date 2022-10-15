@@ -1,172 +1,251 @@
 <!doctype html>
 <html class="h-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500">
-<head>
-  <title>BattlePage</title>
-  <meta charset="UTF-8">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐥</text></svg>">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="./src/tailwindcss.js"></script>
-</head>
-<body class="h-full">
-  <div class="min-h-full">
-    <nav class="bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500">
-      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div class="flex h-16 items-center justify-between">
-          <div class="flex items-center">
-            <div class="flex-shrink-0">
-              <a href="https://canarytrace.com/" target="_blank">
-                <img class="h-8" src="./src/logo-canarytrace.png" alt="Canarytrace">
-              </a>
-            </div>
-            <div class="hidden md:block">
-              <div class="ml-10 flex items-baseline space-x-4">
-                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                <a href="#" class="bg-white text-pink-700 shadow-pink-500/40 px-3 py-2 rounded-md text-sm font-medium" aria-current="page">Battle Page</a>
-  
-                <a href="#" class="text-white hover:bg-white/30 hover:text-pink-700 px-3 py-2 rounded-md text-sm font-medium cursor-default">Project 1</a>
-  
-                <a href="#" class="text-white hover:bg-white/30 hover:text-pink-700 px-3 py-2 rounded-md text-sm font-medium cursor-default">Project 2</a>
-  
-                <a href="#" class="text-white hover:bg-white/30 hover:text-pink-700 px-3 py-2 rounded-md text-sm font-medium cursor-default">Project 3</a>
-  
-                <a href="#" class="text-white hover:bg-white/30 hover:text-pink-700 px-3 py-2 rounded-md text-sm font-medium cursor-default">Project 4</a>
+  <head>
+    <script>performance.mark('HE-start-head')</script>
+    <title>BattlePage</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="BattlePage">
+    <meta property="og:title" content="BattlePage">
+    <meta property="og:description" content="BattlePage">
+    <meta property="og:url" content="http://canarytrace.com/">
+    <meta property="og:site_name" content="BattlePage">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@canarytrace">
+    <script src="https://rum.canarytrace.com/polyfill" async></script>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐥</text></svg>">
+    <!-- LogRocket -->
+    <script>performance.mark('HE-start-logrocket')</script>
+    <script src="https://cdn.lr-in-prod.com/LogRocket.min.js" crossorigin="anonymous"></script>
+    <script>window.LogRocket && window.LogRocket.init('5ijaps/test');</script>
+    <script>performance.mark('HE-stop-logrocket')</script>
+    <!-- demo resources / unuset -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>performance.mark('HE-start-tailwindcss.js')</script>
+    <script src="./src/tailwindcss.js"></script>
+    <script>performance.mark('HE-stop-tailwindcss.js')</script>
+    <script>performance.mark('HE-stop-head')</script>
+  </head>
+  <body class="h-full">
+    <script>performance.mark('HE-start-body')</script>
+    <div class="min-h-full">
+      <script>performance.mark('HE-start-navigation')</script>
+      <nav class="bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500" id="navigation" data-test-id="navigation">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="flex h-16 items-center justify-between">
+            <div class="flex items-center">
+              <div class="flex-shrink-0">
+                <a href="https://canarytrace.com/" target="_blank">
+                  <img class="h-8" src="./src/logo-canarytrace.png" alt="Canarytrace">
+                </a>
+              </div>
+              <div class="hidden md:block">
+                <div class="ml-10 flex items-baseline space-x-4">
+                  <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                  <a href="#" class="bg-white text-pink-700 shadow-pink-500/40 px-3 py-2 rounded-md text-sm font-medium" aria-current="page" data-test-id="battlePage">Battle Page</a>
+    
+                  <a href="#" class="text-white hover:bg-white/30 hover:text-pink-700 px-3 py-2 rounded-md text-sm font-medium cursor-default" data-test-id="project1">Project 1</a>
+    
+                  <a href="#" class="text-white hover:bg-white/30 hover:text-pink-700 px-3 py-2 rounded-md text-sm font-medium cursor-default" data-test-id="project2">Project 2</a>
+    
+                  <a href="#" class="text-white hover:bg-white/30 hover:text-pink-700 px-3 py-2 rounded-md text-sm font-medium cursor-default" data-test-id="project3">Project 3</a>
+    
+                  <a href="#" class="text-white hover:bg-white/30 hover:text-pink-700 px-3 py-2 rounded-md text-sm font-medium cursor-default" data-test-id="project4">Project 4</a>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="hidden md:block">
-            <div class="ml-4 flex items-center md:ml-6">
-              <button type="button" class="rounded-lg p-1 text-white font-semibold">
-                <a href="./index.html">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 7.5l-2.25-1.313M21 7.5v2.25m0-2.25l-2.25 1.313M3 7.5l2.25-1.313M3 7.5l2.25 1.313M3 7.5v2.25m9 3l2.25-1.313M12 12.75l-2.25-1.313M12 12.75V15m0 6.75l2.25-1.313M12 21.75V19.5m0 2.25l-2.25-1.313m0-16.875L12 2.25l2.25 1.313M21 14.25v2.25l-2.25 1.313m-13.5 0L3 16.5v-2.25" />
-                  </svg>
-                </a>
+            <div class="hidden md:block">
+              <div class="ml-4 flex items-center md:ml-6">
+                <button type="button" class="rounded-lg p-1 text-white font-semibold">
+                  <a href="./index.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M21 7.5l-2.25-1.313M21 7.5v2.25m0-2.25l-2.25 1.313M3 7.5l2.25-1.313M3 7.5l2.25 1.313M3 7.5v2.25m9 3l2.25-1.313M12 12.75l-2.25-1.313M12 12.75V15m0 6.75l2.25-1.313M12 21.75V19.5m0 2.25l-2.25-1.313m0-16.875L12 2.25l2.25 1.313M21 14.25v2.25l-2.25 1.313m-13.5 0L3 16.5v-2.25" />
+                    </svg>
+                  </a>
+                </button>
+              </div>
+            </div>
+            <div class="-mr-2 flex md:hidden">
+              <!-- Mobile menu button -->
+              <button type="button" class="inline-flex items-center justify-center rounded-md bg-gray-800 p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" aria-controls="mobile-menu" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <!--
+                  Heroicon name: outline/bars-3
+    
+                  Menu open: "hidden", Menu closed: "block"
+                -->
+                <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+                <!--
+                  Heroicon name: outline/x-mark
+    
+                  Menu open: "block", Menu closed: "hidden"
+                -->
+                <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
               </button>
             </div>
           </div>
-          <div class="-mr-2 flex md:hidden">
-            <!-- Mobile menu button -->
-            <button type="button" class="inline-flex items-center justify-center rounded-md bg-gray-800 p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" aria-controls="mobile-menu" aria-expanded="false">
-              <span class="sr-only">Open main menu</span>
-              <!--
-                Heroicon name: outline/bars-3
-  
-                Menu open: "hidden", Menu closed: "block"
-              -->
-              <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-              </svg>
-              <!--
-                Heroicon name: outline/x-mark
-  
-                Menu open: "block", Menu closed: "hidden"
-              -->
-              <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
+        </div>
+    
+        <!-- Mobile menu, show/hide based on menu state. -->
+        <div class="md:hidden" id="mobile-menu">
+          <div class="space-y-1 px-2 pt-2 pb-3 sm:px-3">
+            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+            <a href="#" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium" aria-current="page"></a>
+    
+            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Team</a>
+    
+            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Projects</a>
+    
+            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Calendar</a>
+    
+            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Reports</a>
           </div>
         </div>
-      </div>
-  
-      <!-- Mobile menu, show/hide based on menu state. -->
-      <div class="md:hidden" id="mobile-menu">
-        <div class="space-y-1 px-2 pt-2 pb-3 sm:px-3">
-          <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-          <a href="#" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium" aria-current="page"></a>
-  
-          <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Team</a>
-  
-          <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Projects</a>
-  
-          <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Calendar</a>
-  
-          <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Reports</a>
+      </nav>
+      <script>performance.mark('HE-stop-navigation')</script>
+    
+      <script>performance.mark('HE-start-header-page')</script>
+      <header class="text-slate-50 antialiased font-sans bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500">
+        <div class="mx-auto max-w-7xl py-6 px-4 sm:px-6 lg:px-8">
+          <h1 class="text-3xl font-bold tracking-tight">
+            Gallery
+          </h1>
         </div>
-      </div>
-    </nav>
-  
-    <header class="text-slate-50 antialiased font-sans bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500">
-      <div class="mx-auto max-w-7xl py-6 px-4 sm:px-6 lg:px-8">
-        <h1 class="text-3xl font-bold tracking-tight">
-          Gallery
-        </h1>
-      </div>
-    </header>
-    <main>
-      <!-- img -->
-      <div class="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
-        <div class="bg-white/20 rounded-lg">
-          <div class="mx-auto max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8 ">
-        
-            <div class="text-slate-50 antialiased font-sans grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
-              <a href="https://battle.canarytrace.com/" target="_blank" class="group">
-                <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg xl:aspect-w-7 xl:aspect-h-8">
-                  <img src="./src/madmonq/madmonq_amumu_wallpaper.jpg" alt="První cucavá tableta na světě, která slouží jako nutriční doplněk pro hráče." class="h-full w-full object-cover object-center group-hover:opacity-75">
-                </div>
-                <h3 class="mt-4 text-sm">Madmonq Amumu</h3>
-                <p class="mt-1 text-lg font-medium">515 CZK</p>
-              </a>
-        
-              <a href="https://battle.canarytrace.com/" target="_blank" class="group">
-                <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
-                  <img src="./src/madmonq/madmonq_badges_wallpaper_1920x1080.png" alt="První cucavá tableta na světě, která slouží jako nutriční doplněk pro hráče." class="h-full w-full object-cover object-center group-hover:opacity-75">
-                </div>
-                <h3 class="mt-4 text-sm">Nomad Tumbler</h3>
-                <p class="mt-1 text-lg font-medium">35 CZK</p>
-              </a>
-        
-              <a href="https://battle.canarytrace.com/" target="_blank" class="group">
-                <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
-                  <img src="./src/madmonq/madmonq_beauty_setup.png" alt="První cucavá tableta na světě, která slouží jako nutriční doplněk pro hráče." class="h-full w-full object-cover object-center group-hover:opacity-75">
-                </div>
-                <h3 class="mt-4 text-sm">Focus Paper Refill</h3>
-                <p class="mt-1 text-lg font-medium">89 CZK</p>
-              </a>
-        
-              <a href="https://battle.canarytrace.com/" target="_blank" class="group">
-                <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
-                  <img src="./src/madmonq/madmonq_doom_wallpaper.jpg" alt="První cucavá tableta na světě, která slouží jako nutriční doplněk pro hráče." class="h-full w-full object-cover object-center group-hover:opacity-75">
-                </div>
-                <h3 class="mt-4 text-sm">Machined Mechanical Pencil</h3>
-                <p class="mt-1 text-lg font-medium">35 CZK</p>
-              </a>
+      </header>
+      <script>performance.mark('HE-stop-header-page')</script>
 
-              <a href="https://battle.canarytrace.com/" target="_blank" class="group">
-                <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
-                  <img src="./src/other/Waves_Dark_Alt_6016x6016.jpg" alt="První cucavá tableta na světě, která slouží jako nutriční doplněk pro hráče." class="h-full w-full object-cover object-center group-hover:opacity-75">
-                </div>
-                <h3 class="mt-4 text-sm">Innkeeper</h3>
-                <p class="mt-1 text-lg font-medium">108 CZK</p>
-              </a>
+      <script>performance.mark('HE-start-body-page')</script>
+      <main>
+        <!-- img -->
+        <div class="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
+          <div class="bg-white/20 rounded-lg">
+            <div class="mx-auto max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8 ">
+          
+              <div class="text-slate-50 antialiased font-sans grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
 
-              <a href="https://battle.canarytrace.com/" target="_blank" class="group">
-                <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
-                  <img src="./src/other/Waves_Monterey_Light_6016x6016.jpg" alt="První cucavá tableta na světě, která slouží jako nutriční doplněk pro hráče." class="h-full w-full object-cover object-center group-hover:opacity-75">
-                </div>
-                <h3 class="mt-4 text-sm">Posters</h3>
-                <p class="mt-1 text-lg font-medium">80 CZK</p>
-              </a>
+                <script>performance.mark('HE-start-body-page-image1')</script>
+                <a href="https://battle.canarytrace.com/" target="_blank" class="group" data-test-id="ob1">
+                  <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg xl:aspect-w-7 xl:aspect-h-8">
+                    <img src="./src/madmonq/madmonq_amumu_wallpaper.jpg" alt="První cucavá tableta na světě, která slouží jako nutriční doplněk pro hráče." class="h-full w-full object-cover object-center group-hover:opacity-75">
+                  </div>
+                  <h3 class="mt-4 text-sm">Madmonq Amumu</h3>
+                  <p class="mt-1 text-lg font-medium">515 CZK</p>
+                </a>
+                <script>performance.mark('HE-stop-body-page-image1')</script>
+          
+                <script>performance.mark('HE-start-body-page-image2')</script>
+                <a href="https://battle.canarytrace.com/" target="_blank" class="group" data-test-id="ob2">
+                  <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
+                    <img src="./src/madmonq/madmonq_badges_wallpaper_1920x1080.png" alt="První cucavá tableta na světě, která slouží jako nutriční doplněk pro hráče." class="h-full w-full object-cover object-center group-hover:opacity-75">
+                  </div>
+                  <h3 class="mt-4 text-sm">Nomad Tumbler</h3>
+                  <p class="mt-1 text-lg font-medium">35 CZK</p>
+                </a>
+                <script>performance.mark('HE-stop-body-page-image2')</script>
+          
+                <script>performance.mark('HE-start-body-page-image3')</script>
+                <a href="https://battle.canarytrace.com/" target="_blank" class="group" data-test-id="ob3">
+                  <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
+                    <img src="./src/madmonq/madmonq_beauty_setup.png" alt="První cucavá tableta na světě, která slouží jako nutriční doplněk pro hráče." class="h-full w-full object-cover object-center group-hover:opacity-75">
+                  </div>
+                  <h3 class="mt-4 text-sm">Focus Paper Refill</h3>
+                  <p class="mt-1 text-lg font-medium">89 CZK</p>
+                </a>
+                <script>performance.mark('HE-stop-body-page-image3')</script>
+          
+                <script>performance.mark('HE-start-body-page-image4')</script>
+                <a href="https://battle.canarytrace.com/" target="_blank" class="group" data-test-id="ob4">
+                  <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
+                    <img src="./src/madmonq/madmonq_doom_wallpaper.jpg" alt="První cucavá tableta na světě, která slouží jako nutriční doplněk pro hráče." class="h-full w-full object-cover object-center group-hover:opacity-75">
+                  </div>
+                  <h3 class="mt-4 text-sm">Machined Mechanical Pencil</h3>
+                  <p class="mt-1 text-lg font-medium">35 CZK</p>
+                </a>
+                <script>performance.mark('HE-stop-body-page-image4')</script>
 
-              <a href="https://battle.canarytrace.com/" target="_blank" class="group">
-                <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
-                  <img src="./src/other/Waves_Light_6016x6016.jpg" alt="První cucavá tableta na světě, která slouží jako nutriční doplněk pro hráče." class="h-full w-full object-cover object-center group-hover:opacity-75">
-                </div>
-                <h3 class="mt-4 text-sm">Posters 2</h3>
-                <p class="mt-1 text-lg font-medium">160 CZK</p>
-              </a>
+                <script>performance.mark('HE-start-body-page-image5')</script>
+                <a href="https://battle.canarytrace.com/" target="_blank" class="group" data-test-id="ob5">
+                  <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
+                    <img src="./src/other/Waves_Dark_Alt_6016x6016.jpg" alt="První cucavá tableta na světě, která slouží jako nutriční doplněk pro hráče." class="h-full w-full object-cover object-center group-hover:opacity-75">
+                  </div>
+                  <h3 class="mt-4 text-sm">Innkeeper</h3>
+                  <p class="mt-1 text-lg font-medium">108 CZK</p>
+                </a>
+                <script>performance.mark('HE-stop-body-page-image5')</script>
 
-              <a href="https://battle.canarytrace.com/" target="_blank" class="group">
-                <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
-                  <img src="./src/other/Waves_Dark_Alt_6016x6016.jpg" alt="První cucavá tableta na světě, která slouží jako nutriční doplněk pro hráče." class="h-full w-full object-cover object-center group-hover:opacity-75">
-                </div>
-                <h3 class="mt-4 text-sm">Flatlay</h3>
-                <p class="mt-1 text-lg font-medium">515 CZK</p>
-              </a>
+                <script>performance.mark('HE-start-body-page-image6')</script>
+                <a href="https://battle.canarytrace.com/" target="_blank" class="group" data-test-id="ob6">
+                  <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
+                    <img src="./src/other/Waves_Monterey_Light_6016x6016.jpg" alt="První cucavá tableta na světě, která slouží jako nutriční doplněk pro hráče." class="h-full w-full object-cover object-center group-hover:opacity-75">
+                  </div>
+                  <h3 class="mt-4 text-sm">Posters</h3>
+                  <p class="mt-1 text-lg font-medium">80 CZK</p>
+                </a>
+                <script>performance.mark('HE-stop-body-page-image6')</script>
+
+                <script>performance.mark('HE-start-body-page-image7')</script>
+                <a href="https://battle.canarytrace.com/" target="_blank" class="group" data-test-id="ob7">
+                  <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
+                    <img src="./src/other/Waves_Light_6016x6016.jpg" alt="První cucavá tableta na světě, která slouží jako nutriční doplněk pro hráče." class="h-full w-full object-cover object-center group-hover:opacity-75">
+                  </div>
+                  <h3 class="mt-4 text-sm">Posters 2</h3>
+                  <p class="mt-1 text-lg font-medium">160 CZK</p>
+                </a>
+                <script>performance.mark('HE-stop-body-page-image7')</script>
+
+                <script>performance.mark('HE-start-body-page-image8')</script>
+                <a href="https://battle.canarytrace.com/" target="_blank" class="group" data-test-id="ob8">
+                  <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
+                    <img src="./src/other/Waves_Dark_Alt_6016x6016.jpg" alt="První cucavá tableta na světě, která slouží jako nutriční doplněk pro hráče." class="h-full w-full object-cover object-center group-hover:opacity-75">
+                  </div>
+                  <h3 class="mt-4 text-sm">Flatlay</h3>
+                  <p class="mt-1 text-lg font-medium">515 CZK</p>
+                </a>
+                <script>performance.mark('HE-stop-body-page-image8')</script>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </main>
-  </div>
+
+        <!-- element generator -->
+        <script>performance.mark('HE-start-element-generator')</script>
+        <div id="element-generator">
+          <script>
+            var foo = new Array(10000);
+            for (var i = 0; i < foo.length; i++) {
+              performance.mark(`HE-test-${(i + 1)}`)
+              document.write(`<div id='test${(i + 1)}'></div>`);
+            }
+          </script>
+        </div>
+        <script>performance.mark('HE-stop-element-generator')</script>
+
+      </main>
+      <script>performance.mark('HE-stop-body-page')</script>
+    </div>
+    <script src="https://rum.canarytrace.com/rum" id="canarytrace-rum"></script>
+    <script>
+      performance.mark('HE-stop-body')
+      performance.measure('head', 'HE-start-head', 'HE-stop-head')
+      performance.measure('body', 'HE-start-body', 'HE-stop-body')
+      performance.measure('logrocket', 'HE-start-logrocket', 'HE-stop-logrocket')
+      performance.measure('tailwindcss.js', 'HE-start-tailwindcss.js', 'HE-stop-tailwindcss.js')
+      performance.measure('navigation', 'HE-start-navigation', 'HE-stop-navigation')
+      performance.measure('header-page','HE-start-header-page','HE-stop-header-page')
+      performance.measure('body-page','HE-start-body-page','HE-stop-body-page')
+      performance.measure('body-page-image1','HE-start-body-page-image1','HE-stop-body-page-image1')
+      performance.measure('body-page-image2','HE-start-body-page-image2','HE-stop-body-page-image2')
+      performance.measure('body-page-image3','HE-start-body-page-image3','HE-stop-body-page-image3')
+      performance.measure('body-page-image4','HE-start-body-page-image4','HE-stop-body-page-image4')
+      performance.measure('body-page-image5','HE-start-body-page-image5','HE-stop-body-page-image5')
+      performance.measure('body-page-image6','HE-start-body-page-image6','HE-stop-body-page-image6')
+      performance.measure('body-page-image7','HE-start-body-page-image7','HE-stop-body-page-image7')
+      performance.measure('body-page-image8','HE-start-body-page-image8','HE-stop-body-page-image8')
+      performance.measure('js-element-generator','HE-start-element-generator','HE-stop-element-generator')
+    </script>
+  </body>
 </html>
