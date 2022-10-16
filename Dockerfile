@@ -1,5 +1,5 @@
 # https://codingwithmanny.medium.com/configure-self-signed-ssl-for-nginx-docker-from-a-scratch-7c2bcd5478c6
-FROM alpine
+FROM node:18.7.0-alpine3.15
 
 ENV APP_DIR /var/www/localhost/htdocs
 ENV NGINX_CONFIG nginx-alpine-ssl
@@ -21,5 +21,6 @@ ENTRYPOINT ["/bin/sh", "/usr/local/bin/entrypoint.sh"]
 # EXPOSE PORTS
 EXPOSE 80
 EXPOSE 443
+EXPOSE 3000
 # RUN COMMAND
 CMD ["/bin/sh", "-c", "nginx -g 'daemon off;'; nginx -s reload;"]
