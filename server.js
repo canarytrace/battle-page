@@ -79,6 +79,55 @@ app.get('/items', function(req, res) {
   ])
 })
 
+app.get('/items-optimized', function(req, res) {
+  let start = Date.now()
+
+  
+  res.set('Server-Timing', `server;dur=${Date.now() - start}`)
+  res.json([
+    {
+      'name':'Madmonq Amumu',
+      'path': './src/madmonq/madmonq_amumu_wallpaper.avif',
+      'price': '515 CZK'
+    },
+    {
+      'name':'Nomad Tumbler',
+      'path': './src/madmonq/madmonq_badges_wallpaper_1920x1080.avif',
+      'price': '35 CZK'
+    },
+    {
+      'name':'Focus Paper Refill',
+      'path': './src/madmonq/madmonq_beauty_setup.avif',
+      'price': '89 CZK'
+    },
+    {
+      'name':'Machined Mechanical Pencil',
+      'path': './src/madmonq/madmonq_doom_wallpaper.avif',
+      'price': '35 CZK'
+    },
+    {
+      'name':'Innkeeper',
+      'path': './src/other/Waves_Dark_Alt_6016x6016.avif',
+      'price': '108 CZK'
+    },
+    {
+      'name':'Posters',
+      'path': './src/other/Waves_Monterey_Light_6016x6016.avif',
+      'price': '80 CZK'
+    },
+    {
+      'name':'Posters 2',
+      'path': './src/other/Waves_Light_6016x6016.avif',
+      'price': '160 CZK'
+    },
+    {
+      'name':'Flatlay',
+      'path': './src/other/Waves_Dark_Alt_6016x6016.avif',
+      'price': '515 CZK'
+    }
+  ])
+})
+
 app.listen(serverPort, () => {
   console.log(`${new Date().toISOString()} BattlePage server listening on port ${serverPort}`)
 })
