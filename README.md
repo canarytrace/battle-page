@@ -26,4 +26,4 @@ is training application for performance and web performance testing
 `npm run start`
 
 ## For use
-`docker run --name battle -it --rm -p 80:80 -p 443:443 -p 3000:3000 quay.io/canarytrace/battle-page:1.5`
+`docker run --name battle -it --rm -p 80:80 -p 443:443 -p 3000:3000 quay.io/canarytrace/battle-page:1.6`
