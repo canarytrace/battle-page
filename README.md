@@ -26,6 +26,17 @@ is training application for performance and web performance testing
 `npm run start`
 
 ## For use
-`docker run --name battle -it --rm -p 80:80 -p 443:443 -p 3000:3000 quay.io/canarytrace/battle-page:1.6`
+`docker run --name battle -it --rm -p 80:80 -p 443:443 -p 3000:3000 quay.io/canarytrace/battle-page:1.8`
+or
+`docker run --name battle -it --rm -p 80:80 -p 443:443 -p 3000:3000 -m="280m" --cpus="0.5" quay.io/canarytrace/battle-page:1.8`
 or
 `quay.io/canarytrace/battle-page:latest`
+
+## .envrc
+
+```
+export ENVIRONMENT=http://localhost
+```
+
+## Perf
+`k6 run k6/baseline.js --insecure-skip-tls-verify`
