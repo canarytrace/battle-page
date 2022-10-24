@@ -6,7 +6,8 @@ ENV NGINX_CONFIG nginx-alpine-ssl
 
 COPY . ${APP_DIR}
 # RUN
-RUN apk add nginx
+RUN apk add --no-cache nginx
+
 # CONFIGUTATIONS
 # nginx configuration
 ADD ${NGINX_CONFIG}/config/default.conf /etc/nginx/http.d/default.conf
@@ -14,6 +15,8 @@ ADD ${NGINX_CONFIG}/config/default.conf /etc/nginx/http.d/default.conf
 ADD ${NGINX_CONFIG}/config/*.key /etc/ssl/private/
 ADD ${NGINX_CONFIG}/config/*.crt /etc/ssl/certs/
 WORKDIR $APP_DIR
+# Install node server
+RUN npm install
 # ENTRYPOINT
 COPY ${NGINX_CONFIG}/config/entrypoint.sh /usr/local/bin
 RUN chmod +x /usr/local/bin/entrypoint.sh

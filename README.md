@@ -27,3 +27,5 @@ is training application for performance and web performance testing
 
 ## For use
 `docker run --name battle -it --rm -p 80:80 -p 443:443 -p 3000:3000 quay.io/canarytrace/battle-page:1.6`
+or
+`quay.io/canarytrace/battle-page:latest`
